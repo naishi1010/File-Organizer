@@ -1,0 +1,20 @@
+Ava Mitchell|123-456-7890|Orlando
+Benjamin Scott|111-222-3333|Atlanta
+Charlotte Phillips|555-444-3333|Dallas
+Elijah Adams|999-888-7777|Houston
+Ethan Turner|444-555-6666|Los Angeles
+Grace Walker|777-666-5555|Miami
+Harper Wright|888-999-0000|Nashville
+Isabella Green|222-333-4444|New Orleans
+James Hill|666-777-8888|New York
+Liam Anderson|555-555-5555|Phoenix
+Logan Edwards|333-222-1111|Portland
+Lucas Campbell|777-777-7777|San Diego
+Mason Hughes|222-222-2222|San Francisco
+Mia Murphy|444-444-4444|Seattle
+Noah Martinez|888-888-8888|Tampa
+Oliver Thompson|999-999-9999|Washington, D.C.
+Olivia Davis|111-111-1111|Austin
+Sophia Wilson|666-666-6666|Chicago
+William Clark|333-333-3333|Denver
+William Moore|777-777-7777|Las Vegas
