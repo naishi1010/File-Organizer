@@ -1,7 +1,8 @@
 import tkinter as tk
 from tkinter import messagebox
 import subprocess
-
+def show_contact_added_message():
+    messagebox.showinfo("Contact Added", "Contact added successfully!")
 def add_contact():
     name = entry_name.get()
     phone_number = entry_phone.get()

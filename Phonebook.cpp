@@ -5,35 +5,23 @@
 
 using namespace std;
 
-// Node structure for the B+ tree
-struct Node {
-    vector<string> keys;
-    vector<Node*> children;
-    bool isLeaf;
-};
-
-// Phonebook class
 class Phonebook {
 private:
-    Node* root;
     fstream file;
 
 public:
-    Phonebook(const string& filename) : root(nullptr), file(filename, ios::out | ios::in | ios::app) {}
+    Phonebook(const string& filename) : file(filename, ios::out | ios::in | ios::app) {}
 
     ~Phonebook() {
         file.close();
     }
 
     void insertContact(const string& name, const string& phoneNumber, const string& address) {
-        // Insert the contact into the B+ tree structure in memory
-
-        // Write the contact to the file
         file << name << "|" << phoneNumber << "|" << address << endl;
     }
 
     bool searchContact(const string& contact) {
-        file.seekg(0, ios::beg); // Reset file pointer to the beginning
+        file.seekg(0, ios::beg);
         string line;
         while (getline(file, line)) {
             size_t delimiterPos = line.find("|");
@@ -41,18 +29,17 @@ public:
             if (name == contact) {
                 string phoneNumber = line.substr(delimiterPos + 1, line.find("|", delimiterPos + 1) - delimiterPos - 1);
                 string address = line.substr(line.find_last_of("|") + 1);
-                
+
                 cout << "Contact Details:" << endl;
                 cout << "Name: " << name << endl;
                 cout << "Phone Number: " << phoneNumber << endl;
                 cout << "Address: " << address << endl;
-                
+
                 return true;
             }
         }
         return false;
     }
-
 };
 
 int main() {
